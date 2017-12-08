@@ -15,11 +15,6 @@ for (var i = 0; i <= goalNumber; i++) {
   userOutputs.push(currentDigit);
   }
 
-// for (var j = 0; j <= userOutputs.length; j++) {
-//   if (userOutputs.charAt(j) === 1) {
-//     userOutputs[j] === "Boop!";
-//     }
-//   }
 }
 
 var hasNumber = function(digit, check) {
@@ -47,6 +42,7 @@ $(document).ready(function() {
         var goalNumber = parseInt($("input#countuntil").val());
         var finalList = countFunction(goalNumber);
         var userOutput = [];
+        $("#results").empty();
         $("#readout").show();
         userOutputs.forEach(function(userOutput) {
         $("#results").append(userOutput + ", ");
