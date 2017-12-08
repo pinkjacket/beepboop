@@ -7,6 +7,8 @@ for (var i = 0; i <= goalNumber; i++) {
     currentDigit = "Beep!"
   } else if (hasNumber(i, 1)) {
     currentDigit = "Boop!";
+  } else if (divideByThree(i)) {
+    currentDigit = "I'm sorry, Dave. I'm afraid I can't do that"
   } else {
     currentDigit = i;
   }
@@ -30,7 +32,11 @@ var hasNumber = function(digit, check) {
   }
 }
 
-
+var divideByThree = function(number) {
+  if (number % 3 === 0) {
+    return true;
+  }
+}
 
 
 
