@@ -4,4 +4,6 @@ body {
 #readout {
   display:none;
   border-style: groove;
+  border-radius: 5%;
+  background-color: pink;
 }

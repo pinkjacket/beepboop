@@ -1,3 +1,4 @@
+// backend
 var countFunction = function(goalNumber) {
 userOutputs = [];
 
@@ -5,16 +6,18 @@ for (var i = 0; i <= goalNumber; i++) {
   var currentDigit;
   if (hasNumber(i, 0)) {
     currentDigit = "Beep!"
-  } else if (hasNumber(i, 1)) {
+  }
+  else if (hasNumber(i, 1)) {
     currentDigit = "Boop!";
-  } else if (divideByThree(i)) {
+  }
+  else if (divideByThree(i)) {
     currentDigit = "I'm sorry, Dave. I'm afraid I can't do that"
-  } else {
+  }
+  else {
     currentDigit = i;
   }
   userOutputs.push(currentDigit);
   }
-
 }
 
 var hasNumber = function(digit, check) {
@@ -36,6 +39,7 @@ var divideByThree = function(number) {
 
 
 
+// front end
 $(document).ready(function() {
   $("form#input").submit(function(event) {
     event.preventDefault();
