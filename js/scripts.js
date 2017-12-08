@@ -3,10 +3,11 @@ userOutputs = [];
 
 for (var i = 0; i <= goalNumber; i++) {
   var currentDigit;
-  if (hasNumber(i, 1)) {
+  if (hasNumber(i, 0)) {
+    currentDigit = "Beep!"
+  } else if (hasNumber(i, 1)) {
     currentDigit = "Boop!";
-  }
-  else {
+  } else {
     currentDigit = i;
   }
   userOutputs.push(currentDigit);
@@ -20,13 +21,13 @@ for (var i = 0; i <= goalNumber; i++) {
 }
 
 var hasNumber = function(digit, check) {
-var thisDigit = digit.toString();
-var numberCheck = check.toString();
-for (var j = 0; j < thisDigit.length; j++) {
-  if (thisDigit.charAt(j) === numberCheck) {
-    return true;
+  var thisDigit = digit.toString();
+  var numberCheck = check.toString();
+  for (var j = 0; j < thisDigit.length; j++) {
+    if (thisDigit.charAt(j) === numberCheck) {
+      return true;
+    }
   }
-}
 }
 
 
