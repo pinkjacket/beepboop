@@ -49,7 +49,7 @@ $(document).ready(function() {
         $("#results").empty();
         $("#readout").show();
         userOutputs.forEach(function(userOutput) {
-        $("#results").append(userOutput + ", ");
+        $("#results").append("<li>" + userOutput + "</li>");
       });
   });
 });
